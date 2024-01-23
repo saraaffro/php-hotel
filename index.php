@@ -50,7 +50,12 @@
 
   // var_dump($hotels[0]);
   foreach($hotels as $hotel){
-   echo $hotel['name'];
+    echo "<h2>{$hotel['name']}</h2>";
+    echo "<p><strong>Description:</strong> {$hotel['description']}</p>";
+    echo "<p><strong>Parking:</strong> " . ($hotel['parking'] ? 'Yes' : 'No') . "</p>";
+    echo "<p><strong>Vote:</strong> {$hotel['vote']}</p>";
+    echo "<p><strong>Distance to Center:</strong> {$hotel['distance_to_center']} km</p>";
+    echo "<hr>";
   }
   
 ?>
